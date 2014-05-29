@@ -1,0 +1,19 @@
+---
+
+- hosts: localhost
+  # remote_user: vagrant
+  # sudo: yes
+  tasks:
+    - apt: update_cache=yes
+    - apt: name=git state=latest
+      with_items:
+        - git
+        - tree
+        - vim
+
+- hosts: localhost
+  roles:
+    - rbenv
+  tasks:
+    - name: Install Bundler
+      command: bash -lc "gem install bundler" -u vagrant         
