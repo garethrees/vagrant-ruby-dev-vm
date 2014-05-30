@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   if WORKON
     if File.directory?(WORKON)
       config.vm.synced_folder WORKON,
-                              "/code/#{ WORKON }",
+                              "/code/#{ WORKON.split('/').last }",
                               :owner => 'vagrant',
                               :group => 'vagrant'
     end
