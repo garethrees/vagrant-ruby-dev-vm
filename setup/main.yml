@@ -8,6 +8,7 @@
     - apt: name=git state=latest
       with_items:
         - git
+        - subversion
         - tree
         - vim
 
