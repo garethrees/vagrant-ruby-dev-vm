@@ -20,6 +20,7 @@
     - libcurl4-openssl-dev
     - python-software-properties
     - ruby-dev
+    - nodejs
 
 - name: rbenv | update rbenv repo
   git: repo=git://github.com/sstephenson/rbenv.git
