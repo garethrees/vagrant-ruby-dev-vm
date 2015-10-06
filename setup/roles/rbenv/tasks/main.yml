@@ -19,6 +19,7 @@
     - libxslt1-dev
     - libcurl4-openssl-dev
     - python-software-properties
+    - ruby-dev
 
 - name: rbenv | update rbenv repo
   git: repo=git://github.com/sstephenson/rbenv.git
