@@ -5,6 +5,7 @@
        state=latest
        install_recommends=no
   with_items:
+    - autoconf
     - git-core
     - curl
     - zlib1g-dev
@@ -21,6 +22,9 @@
     - python-software-properties
     - ruby-dev
     - nodejs
+    - byacc
+    - flex
+    - bison
 
 - name: rbenv | update rbenv repo
   git: repo=git://github.com/sstephenson/rbenv.git
