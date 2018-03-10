@@ -5,8 +5,7 @@ RUBYDEV_MEMORY = ENV['RUBYDEV_MEMORY'] || '1024'
 VAGRANTFILE_API_VERSION = 2
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'ubuntu-1404'
-  config.vm.box_url = 'http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box'
+  config.vm.box = 'ubuntu/xenial64'
 
   config.vm.network :private_network, ip: RUBYDEV_IP
 
