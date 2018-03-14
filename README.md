@@ -5,7 +5,7 @@ Vagrant VM to develop Ruby code against.
 
 Uses:
 
-- Ubuntu 14.04
+- Ubuntu 16.04
 - rbenv
 - ansible
 
